@@ -1,22 +1,22 @@
-h1. Mac Mini
+# Mac Mini #
 
 {{toc}}
 
-h2. Accessing
+## Accessing ##
 
-h3. Account
+### Account ###
 
 * IP: @macmini.local.igalia.com@
 * User: @igalia@
 * Password: @WebKit@
 
-h3. SSH
+### SSH ###
 
 <pre><code class="bash">
 $ ssh igalia@macmini.local.igalia.com
 </code></pre>
 
-h3. VNC (via ssh tunneling)
+### VNC (via ssh tunneling) ### 
 
 1. Open a tunnel
 
@@ -34,7 +34,7 @@ $ vinagre &
 
 !https://forge.igalia.com/attachments/download/1495/vinagre-with-vnc-tunnel-conf.png!
 
-h3. Comments
+### Comments ### 
 
   * _ssh server_ is installed
   * _vnc server_ is enabled
@@ -44,7 +44,7 @@ h3. Comments
 
 h2. Mac port
 
-h3. Building
+### Building ### 
 
 * First, create your own folder in _/home/igalia_.
 * Clone a WebKit repository. There are other users with a cloned repository in the same folder (for instance: calvaris, cgarcia, dpino, etc), so simply copy their WebKit repository and update your master.
@@ -53,7 +53,7 @@ h3. Building
 $ Tools/Scripts/build-webkit
 </code></pre>
 
-h3. Launching WebKit
+### Launching WebKit ###
 
 * Once it has been built, run the minibrowser:
 <pre><code class="bash">
@@ -65,13 +65,13 @@ $ Tools/Scripts/run-minibrowser
 $ Tools/Scripts/run-safari
 </code></pre>
 
-h3. Debugging:
+### Debugging ###
 
 The Mac port uses _xcode_ to build the sources. Because of that, customizing the debug is slightly different from the _GTK_ port.
 
 * There is quite a lot of good information for debugging the Mac port at: https://trac.webkit.org/wiki/WikiStart#Bugsanddebugging
 
-h3. Logging support
+### Logging support ###
 
 Logging and other output/behaviors support is activated by default in a _Debug_ build only.
 
@@ -108,7 +108,7 @@ Tools like ​"tcpdump":http://www.tcpdump.org/ or "​WireShark":https://www.wi
 
 For further information you may want to check https://trac.webkit.org/wiki/WebKitGTK/Debugging#Networkanalysis
 
-h3. Other info:
+### Other info ###
 
 * Building WebKit: https://www.webkit.org/building/build.html
 * Running WebKit: https://www.webkit.org/building/run.html
