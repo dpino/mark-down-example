@@ -6,9 +6,9 @@
 
 ### Account ###
 
-* IP: @macmini.local.igalia.com@
-* User: @igalia@
-* Password: @WebKit@
+* IP: _macmini.local.igalia.com_
+* User: _igalia_
+* Password: _WebKit_
 
 ### SSH ###
 
@@ -18,7 +18,7 @@ $ ssh igalia@macmini.local.igalia.com
 
 ### VNC (via ssh tunneling) ### 
 
-1. Open a tunnel
+* Open a tunnel
 
 <pre><code class="bash">
 $ ssh -p 6789 -L 5900:macmini.local.igalia.com:5900 igalia.com
@@ -26,13 +26,13 @@ $ ssh -p 6789 -L 5900:macmini.local.igalia.com:5900 igalia.com
 
 If everything is OK, you should get into igalia.com after executing this command.
 
-2. Open VNC session
+* Open VNC session
 
 <pre><code class="bash">
 $ vinagre &
 </code></pre>
 
-!https://forge.igalia.com/attachments/download/1495/vinagre-with-vnc-tunnel-conf.png!
+![alt Vinagre with VNC tunnel conf](https://forge.igalia.com/attachments/download/1495/vinagre-with-vnc-tunnel-conf.png "Vinagre with VNB tunnel conf")
 
 ### Comments ### 
 
@@ -40,7 +40,7 @@ $ vinagre &
   * _vnc server_ is enabled
   * _sudo access_ is enabled
   * If you want to create your own account you can login as @igalia@ user and follow the next steps: https://support.apple.com/kb/PH11468
-  * If the machine is offline try to ping macmini.local.igalia.com from maestria. If it doesn't reply call by phone to the Coruña office and ask somebody to power it on. The Mac Mini is located where Joaquim's desktop was.
+  * If the machine is offline try to **ping** _macmini.local.igalia.com from maestria_. If it doesn't reply call by phone to the Coruña office and ask somebody to power it on. The Mac Mini is located where Joaquim's desktop was.
 
 h2. Mac port
 
@@ -78,9 +78,9 @@ Logging and other output/behaviors support is activated by default in a _Debug_ 
 In addition to having the logging support activated in the compilation, we need also to turn on the proper logging channels for specific domains when running.
 
 The domains are:
-* @WebCoreLogging@
-* @WebKitLogging@
-* @WebKit2Logging@
+* _WebCoreLogging_
+* _WebKitLogging_
+* _WebKit2Logging_
 
 These channels are defined in the "​Source/WebCore/platform/Logging.h":http://trac.webkit.org/browser/trunk/Source/WebCore/platform/Logging.h, ​"Source/WebKit2/Platform/Logging.h":http://trac.webkit.org/browser/trunk/Source/WebKit2/Platform/Logging.h and  "Source/WebKit/mac/Misc/WebKitLogging.h":http://trac.webkit.org/browser/trunk/Source/WebKit/mac/Misc/WebKitLogging.h headers.
 
