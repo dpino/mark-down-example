@@ -42,7 +42,7 @@ $ vinagre &
   * If you want to create your own account you can login as @igalia@ user and follow the next steps: https://support.apple.com/kb/PH11468
   * If the machine is offline try to **ping** _macmini.local.igalia.com from maestria_. If it doesn't reply call by phone to the Coruña office and ask somebody to power it on. The Mac Mini is located where Joaquim's desktop was.
 
-h2. Mac port
+## Mac port ##
 
 ### Building ### 
 
@@ -100,7 +100,7 @@ This is a Release build example in which we want to turn on the logging support
 $ Tools/Scripts/build-webkit GCC_PREPROCESSOR_DEFINITIONS='${inherited} LOG_DISABLED=0'
 </code></pre>
 
-h4. Network logging
+#### Network logging ####
 
 Turning *on* the network logging may not give us all the information about the HTTP traffic.
 
@@ -113,24 +113,24 @@ For further information you may want to check https://trac.webkit.org/wiki/WebKi
 * Building WebKit: https://www.webkit.org/building/build.html
 * Running WebKit: https://www.webkit.org/building/run.html
 
-h2. Transfer a patch from the Mac Mini
+## Transfer a patch from the Mac Mini ##
 
 If you have coded a patch in the Mac Mini and would like to transfer it to your local machine, you can _scp_ the patch from the __mac mini__ to __maestria__ and again from __maestria__ to your local machine.
 
 The Mac Mini has a *filetea* command line installed which can make the process straight forward.
 
-1. Create your patch.
+* Create your patch.
 
 <pre><code class="bash">
 $ git format-patch HEAD~
 </code></pre>
 
-2. Transfer it with filetea.
+* Transfer it with filetea.
 
 <pre><code class="bash">
 $ filetea 0001-XXX.patch
 </code></pre>
 
-3. Open the given URL as a result of step 2 and paste it in your browser.
+* Open the given URL as a result of step 2 and paste it in your browser.
 
 
